@@ -1,0 +1,8 @@
+.wrapper_with_padding
+	#website_show
+		%h1.title= @website.title
+		%p= simple_format(@website.content)
+
+		.buttons
+			= link_to "Edit", edit_website_path(@website), class: "button"
+			= link_to "Delete", website_path(@website), method: :delete, data: { confirm: "Are you sure?" }, class: "button"
