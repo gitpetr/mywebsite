@@ -1,10 +1,11 @@
 .wrapper_with_padding
-	#websites.clearfix
-		- unless @websites.blank?
-			- @websites.each do |website|
-				%a{ href: (url_for [website])}
-					.website
-						%p.title= website.title
-						%p.date= time_ago_in_words(website.created_at)
-		%h2 Add a Website
-		%p= link_to "New Website", new_website_path, klass: 'button'
+  #websites.clearfix
+    #banner
+      - unless @websites.blank?
+        - @websites.each do |website|
+          %a{ href: (url_for [website])}
+            .website
+              %p.title= website.title
+              %p.date= time_ago_in_words(website.created_at)
+      %h2 Add a Website
+      %p= link_to "New Website", new_website_path, klass: 'button'

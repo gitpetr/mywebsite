@@ -1,5 +1,7 @@
-= simple_form_for @website do |f|
-  = f.input :title
-  = f.input :content
-  = f.input :image
-  = f.submit
+- if user_signed_in?
+  - if current_user.is_admin?
+    = simple_form_for @website do |f|
+      = f.input :title
+      = f.input :content
+      = f.input :image
+      = f.submit
