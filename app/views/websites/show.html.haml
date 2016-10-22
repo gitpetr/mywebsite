@@ -2,7 +2,9 @@
   #website_show
     %h1.title= @website.title
     %p= image_tag @website.image.url(:medium)
-    #content= simple_format(@website.content)
+    #content
+      = simple_format(@website.content)
+      = link_to 'Перейти на сайт', @website.siteurl, class: 'button'
 
     .buttons
       = link_to "Edit", edit_website_path(@website), class: "button"
