@@ -64,19 +64,25 @@ a {
 }
 
 header {
-	background: $dark_gray;
+	background: #B8316A;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 1.75rem 0;
+	padding: 0.5rem 0;
 	border-bottom: 7px solid $green;
 	.header_inner {
 		width: 90%;
 		margin: 0 auto;
 		#logo {
 			display: inline-block;
-			width: 10rem;
+			width: 100px;
 			float: left;
+			img{
+			width: 200px;
+			padding: 0;
+			margin: 0;
+			}
+
 		}
 		nav {
 			float: right;
@@ -89,6 +95,9 @@ header {
 				&:hover {
 					color: $green;
 				}
+			}
+			p {
+				padding: 0.7rem 0 0 0;
 			}
 		}
 	}

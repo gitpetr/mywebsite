@@ -3,9 +3,9 @@
     #banner
       - unless @websites.blank?
         - @websites.each do |website|
-          %a{ href: (url_for [website])}
-            .website
-              %p.title= website.title
-              %p.date= time_ago_in_words(website.created_at)
-      %h2 Add a Website
-      %p= link_to "New Website", new_website_path, klass: 'button'
+          .website
+            %p.title= website.title
+            %p= website.image
+      - if user_signed_in?
+        - if current_user.is_admin?
+          %p= link_to "New Website", new_website_path, klass: 'button'

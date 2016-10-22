@@ -8,15 +8,15 @@
 	%body
 		%header
 			.header_inner
-				= link_to image_tag( 'logo.svg'), root_path, id: "logo"
+				= link_to image_tag( 'logo.png'), root_path, id: "logo"
 				%nav
+					%p= link_to 'контакты', '#'
 					- if user_signed_in?
 						= link_to "Sign Out", destroy_user_session_path, method: :delete
 						- if current_user.is_admin?
 							= link_to "New Website", new_website_path
-					- else
-						= link_to "Log In", new_user_session_path
+					 
 		%p.notice= notice
 		%p.alert= alert
 
-		= yield
+		#main-fixed= yield

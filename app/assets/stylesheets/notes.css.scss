@@ -49,3 +49,12 @@
 		}
 	}
 }
+#main-fixed{
+position: fixed;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -400;
+background-image: url(asset_path('banner.jpg'));
+background-size: cover;
+}
