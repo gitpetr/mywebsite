@@ -48,3 +48,4 @@ end
 gem 'haml-rails', '~> 0.9.0'
 gem 'devise', '~> 4.2'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
+gem 'paperclip', '~> 5.1'

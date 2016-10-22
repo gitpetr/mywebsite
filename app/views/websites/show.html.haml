@@ -1,7 +1,7 @@
 .wrapper_with_padding
   #website_show
     %h1.title= @website.title
-    %p= @website.image
+    %p= image_tag @website.image.url(:medium)
     %p= simple_format(@website.content)
 
     .buttons

@@ -5,7 +5,7 @@
         - @websites.each do |website|
           .website
             %p.title= website.title
-            %p= website.image
+            %p= link_to (image_tag(website.image.url(:thumb))), website
       - if user_signed_in?
         - if current_user.is_admin?
           %p= link_to "New Website", new_website_path, klass: 'button'
