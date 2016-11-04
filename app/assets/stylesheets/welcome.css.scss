@@ -1,8 +1,8 @@
 #banner {
-	background-image: url(image_path("banner.jpg"));
+	/* background-image: url(image_path("banner.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: top center; */
 	width: 100%;
 	min-height: 500px;
 	display: table;
@@ -41,10 +41,10 @@
 }
 
 #callouts {
-	background-image: url(image_path("callout_background.jpg"));
+	/* background-image: url(image_path("callout_background.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: top center; */
 	width: 100%;
 	min-height: 400px;
 	display: table;
